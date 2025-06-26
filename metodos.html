@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/acessibilidade.css">
+    <script src="./java/tema.js" defer></script>
+    <script src="./java/acessibilidade.js"></script>
+</head>
+<body>
+    <div class="acessibilidade-container">
+        <button class="btn-acessibilidade" onclick="toggleMenu()">Acessibilidade ▼</button>
+        <div id="menuTamanhoFonte" class="tamanho-fonte-menu">
+            <a href="#" onclick="mudarTamanhoFonte(1)">Padrão (1x)</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.25)">Aumentar 1.25x</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.5)">Aumentar 1.5x</a>
+            <a href="#" onclick="mudarTamanhoFonte(2)">Aumentar 2x</a>
+            
+        </div>
+    </div>
+</head>
+<body>
+    <div class="theme-switch">
+        <button id="theme-toggle">Modo Escuro</button>
+    </div>
+  
+    <header>
+        <h1>Métodos de Proteção</h1>
+        <p style="color: white;">Técnicas e ferramentas para segurança digital</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="metodos.html">Métodos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="referencias.html">Referências</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Técnicas Essenciais de Cibersegurança</h2>
+            
+            <h3>Proteção Preventiva</h3>
+            <ul>
+                <li><strong>Firewalls:</strong> Filtram tráfego de rede indesejado</li>
+                <li><strong>Antivírus:</strong> Detectam e removem malware</li>
+                <li><strong>Atualizações:</strong> Mantêm sistemas protegidos contra vulnerabilidades conhecidas</li>
+            </ul>
+            
+            <h3>Proteção de Dados</h3>
+            <ul>
+                <li><strong>Criptografia:</strong> Protege dados em trânsito e em repouso</li>
+                <li><strong>Backups:</strong> Permitem recuperação após incidentes</li>
+                <li><strong>Autenticação Multifator:</strong> Adiciona camadas extras de segurança</li>
+            </ul>
+            
+            <h3>Monitoramento e Resposta</h3>
+            <ul>
+                <li><strong>SIEM:</strong> Centraliza e analisa logs de segurança</li>
+                <li><strong>IDS/IPS:</strong> Detectam e previnem intrusões</li>
+                <li><strong>Planos de Resposta:</strong> Minimizam danos durante incidentes</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

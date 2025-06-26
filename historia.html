@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Cibersegurança</title>
+     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/acessibilidade.css">
+    <script src="./java/tema.js" defer></script>
+    <script src="./java/acessibilidade.js"></script>
+</head>
+<body>
+    <div class="acessibilidade-container">
+        <button class="btn-acessibilidade" onclick="toggleMenu()">Acessibilidade ▼</button>
+        <div id="menuTamanhoFonte" class="tamanho-fonte-menu">
+            <a href="#" onclick="mudarTamanhoFonte(1)">Padrão (1x)</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.25)">Aumentar 1.25x</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.5)">Aumentar 1.5x</a>
+            <a href="#" onclick="mudarTamanhoFonte(2)">Aumentar 2x</a>
+            
+        </div>
+    </div>
+</head>
+<body>
+    <div class="theme-switch">
+        <button id="theme-toggle">Modo Claro</button>
+    </div>
+    <header>
+        <h1>História da Cibersegurança</h1>
+        <p style="color: white;">Da década de 1970 aos dias atuais</p>
+    </header>
+</body>
+</html>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="metodos.html">Métodos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="referencias.html">Referências</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>A Evolução da Cibersegurança</h2>
+            
+            <article>
+                <h3>Os Primórdios (Década de 1970)</h3>
+                <p>A saga da cibersegurança começou por volta de 1970, nos laboratórios onde a ARPANET, mãe da internet, dava seus primeiros passos. Foi ali que Bob Thomas criou o Creeper em 1971, um programa que se replicava entre computadores exibindo a frase "Eu sou o Creeper, me pegue se puder". Mesmo sendo inofensivo, ele é considerado o primeiro vírus, e inspirou a criação do Reaper, tido como o primeiro antivírus.
+</p>
+                
+                <p>Ao mesmo tempo, a criptografia ganhava força. Em 1976, Whitfield Diffie e Martin Hellman lançaram o estudo "Novos Caminhos na Criptografia", apresentando as chaves públicas e privadas. Em 1977, o algoritmo RSA surgiu, virando a base da criptografia assimétrica que protege nossas conversas online até hoje.
+</p>
+            </article>
+            
+            <article>
+                <h3>A Era dos PCs e a Conscientização (Década de 1980)</h3>
+                <p>Com a chegada dos computadores pessoais nos anos 80, a segurança digital deixou de ser assunto só de especialistas. Em 1986, os irmãos Basit e Amjad Farooq Alvi, do Paquistão, criaram o Brain, o primeiro vírus para PCs. Diferente do Creeper, o Brain tinha um objetivo comercial: proteger um software médico contra cópias ilegais, mas mostrou como vírus podiam se espalhar por disquetes.</p>
+                
+                <p>Em 1988, o worm Morris, criado por Robert Tappan Morris, mudou tudo. Ele foi um dos primeiros a causar grandes estragos, atingindo cerca de 10% dos computadores da internet (cerca de 60.000 máquinas). Isso levou à criação do primeiro CERT (Equipe de Resposta a Emergências Cibernéticas) e acelerou o desenvolvimento de firewalls para proteger as redes.</p>
+            </article>
+            
+            <article>
+                <h3>A Explosão da Internet e Novos Desafios (Década de 1990)</h3>
+                <p>Nos anos 90, a internet virou comercial e trouxe novos perigos. Em 1994, a Netscape Communications criou o SSL (Secure Sockets Layer), permitindo as primeiras compras seguras online, uma tecnologia que virou o TLS que usamos hoje. Enquanto isso, vírus como o Melissa, em 1999, mostraram como códigos maldosos podiam se espalhar pelo mundo em poucas horas por e-mail, causando prejuízos enormes.
+</p>
+                
+                <p>Nessa época, surgiram os primeiros honeypots, sistemas criados para atrair e estudar hackers, desenvolvidos por Clifford Stoll, que ajudou a desvendar uma das primeiras redes de espionagem cibernética no Lawrence Berkeley National Laboratory.</p>
+            </article>
+            
+            <article>
+                <h3>A Nova Era Digital (Anos 2000)</h3>
+                <p>O novo século trouxe ataques cada vez mais elaborados. Em 2000, ataques DDoS (negação de serviço distribuído) derrubaram sites como Yahoo!, Amazon e eBay, mostrando a fragilidade da internet. Três anos depois, o worm SQL Slammer infectou 75.000 sistemas em apenas 10 minutos, explorando uma falha nos servidores Microsoft SQL Server.</p>
+                
+                <p>O cibercrime orquestrado se transformou em um negócio que movimenta bilhões, com botnets como o Storm Worm, que dominam milhões de computadores infectados. Em 2010, o Stuxnet, um worm extremamente complexo, veio à tona, causando danos em equipamentos nucleares do Irã e sendo visto como a primeira arma cibernética criada por um governo.</p>
+            </article>
+            
+            <article>
+                <h3>Os Desafios Atuais (2010-Presente)</h3>
+                <p>Nos últimos dez anos, a guerra cibernética aumentou muito. Em 2013, as informações divulgadas por Edward Snowden revelaram programas de espionagem global em grande escala. Em 2017, o ransomware WannaCry bloqueou sistemas em mais de 150 nações, incluindo hospitais e serviços essenciais.
+</p>
+                
+                <p>Atualmente, a Internet das Coisas (IoT) e a inteligência artificial trazem novos obstáculos. Aparelhos IoT costumam ter pouca segurança, enquanto deepfakes e ataques com IA são ameaças novas. A computação quântica promete superar os sistemas de criptografia de hoje, causando uma busca mundial por novas formas de proteção.</p>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

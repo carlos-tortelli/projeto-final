@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/acessibilidade.css">
+    <script src="./java/tema.js" defer></script>
+    <script src="./java/acessibilidade.js"></script>
+</head>
+<body>
+    <div class="acessibilidade-container">
+        <button class="btn-acessibilidade" onclick="toggleMenu()">Acessibilidade ▼</button>
+        <div id="menuTamanhoFonte" class="tamanho-fonte-menu">
+            <a href="#" onclick="mudarTamanhoFonte(1)">Padrão (1x)</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.25)">Aumentar 1.25x</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.5)">Aumentar 1.5x</a>
+            <a href="#" onclick="mudarTamanhoFonte(2)">Aumentar 2x</a>
+            
+        </div>
+    </div>
+</head>
+<body>
+    <div class="theme-switch">
+        <button id="theme-toggle">Modo Escuro</button>
+    </div>
+  
+    
+    <header>
+        <h1>Sobre Nós</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="metodos.html">Métodos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="referencias.html">Referências</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="team-section">
+            <h2>Estudantes</h2>
+         
+            <div class= "team-members">
+
+                <div class="member-card">
+                    <img src="./img-video/André.jpeg" alt="André" class="member-photo" width="230px" height="300px">
+                    <h3>André Bohm Hallwass</h3>
+                    <p class="member-role">Estudante de Ciência da computação</p>
+                    <p class="member-bio"></p>
+                </div>
+
+                <div class="member-card">
+                    <img src="./img-video/Carlos.jpeg" alt="Carlos" class="member-photo" width="200px"  height="300px">
+                    <h3>Carlos Gabriel Tortelli</h3>
+                    <p class="member-role">Estudante de Ciência da computação</p>
+                    <p class="member-bio"></p>
+                </div>
+            </div>
+            </section>
+    <footer></footer>
+</body>
+</html>

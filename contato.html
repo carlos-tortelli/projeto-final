@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/acessibilidade.css">
+    <script src="./java/tema.js" defer></script>
+    <script src="./java/acessibilidade.js"></script>
+</head>
+<body>
+    <div class="acessibilidade-container">
+        <button class="btn-acessibilidade" onclick="toggleMenu()">Acessibilidade ▼</button>
+        <div id="menuTamanhoFonte" class="tamanho-fonte-menu">
+            <a href="#" onclick="mudarTamanhoFonte(1)">Padrão (1x)</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.25)">Aumentar 1.25x</a>
+            <a href="#" onclick="mudarTamanhoFonte(1.5)">Aumentar 1.5x</a>
+            <a href="#" onclick="mudarTamanhoFonte(2)">Aumentar 2x</a>
+            
+        </div>
+    </div>
+</head>
+<body>
+    <div class="theme-switch">
+        <button id="theme-toggle">Modo Claro</button>
+    </div>
+    
+<style>
+#envia:checked ~ #msg {
+    display: block;
+  }
+
+#msg {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    animation: aparecerSumir 4s forwards;
+  }
+
+@keyframes aparecerSumir {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+</style>
+    <header>
+        <h1>Fale Conosco</h1>
+        <p style="color:white">Entre em contato</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="metodos.html">Métodos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="referencias.html">Referências</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="contact-section">
+            <h2>Formulário de Contato</h2>
+            <form class="contact-form" method="dialog">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="problema">Reportar Problema</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <label for="envia">Enviar</label>
+                <input type="checkbox" id="envia" style="display:none"/>
+                <div id="msg">Página em construção</div>
+            </form>
+        </section>
+    </main>
+        
+        <section class="contact-info">
+            <h2>Outras Formas de Contato</h2>
+            <div class="info-container">
+                <div class="info-item">
+                    <h3>E-mail</h3>
+                    <p>194227@upf.br (Carlos)
+                        <br>
+                        208275@upf.br (Andre)
+                    </p>
+                </div>
+                <div class="info-item">
+                    <h3>Telefone</h3>
+                    <p>(54) 99903-4018 (Carlos)
+                        <br>
+                    (54) 99978-6917 (Andre)
+                    </p>
+                </div>
+                <div class="info-item">
+                    <h3>Endereço</h3>
+                    <p>Universidade de Passo Fundo<br>Rio Grande do Sul</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
